@@ -1,0 +1,4233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{56AD9F69-7733-4F13-A718-E46A5FBE0891}" Label="" Name="ModelePhysiqueDonnees_1" Objects="224" Symbols="25" Target="INFORMIX SQL 9.x" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="11.1.0.1547 Evaluation"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>56AD9F69-7733-4F13-A718-E46A5FBE0891</a:ObjectID>
+<a:Name>ModelePhysiqueDonnees_1</a:Name>
+<a:Code>MODELEPHYSIQUEDONNEES_1</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Physical Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+RevPkey=Yes
+RevFkey=Yes
+RevAkey=Yes
+RevCheck=Yes
+RevIndx=Yes
+RevOpts=Yes
+RevViewAsTabl=No
+RevViewOpts=Yes
+RevSystAsTabl=Yes
+RevTablPerm=No
+RevViewPerm=No
+RevProcPerm=No
+RevDbpkPerm=No
+RevSqncPerm=No
+RevAdtPerm=No
+RevUserPriv=No
+RevUserOpts=No
+RevGrpePriv=No
+RevRolePriv=No
+RevDtbsOpts=Yes
+RevDtbsPerm=No
+RevViewIndx=Yes
+RevJidxOpts=Yes
+RevCaseSensitive=No
+GenScriptName=crebas
+GenScriptName0=
+GenScriptName1=
+GenScriptName2=
+GenScriptName3=
+GenScriptName4=
+GenScriptName5=
+GenScriptName6=
+GenScriptName7=
+GenScriptName8=
+GenScriptName9=
+GenPathName=
+GenSingleFile=Yes
+GenTrgScriptName=cretrg
+GenTrgScriptName0=
+GenTrgScriptName1=
+GenTrgScriptName2=
+GenTrgScriptName3=
+GenTrgScriptName4=
+GenTrgScriptName5=
+GenTrgScriptName6=
+GenTrgScriptName7=
+GenTrgScriptName8=
+GenTrgScriptName9=
+GenTrgPathName=
+GenTrgSingleFile=Yes
+GenODBC=No
+GenCheckModel=Yes
+GenScriptPrev=Yes
+GenArchiveModel=No
+GenDataPathName=
+GenDataSinglefile=Yes
+GenDataScriptName=testdata
+GenDataScriptName0=
+GenDataScriptName1=
+GenDataScriptName2=
+GenDataScriptName3=
+GenDataScriptName4=
+GenDataScriptName5=
+GenDataScriptName6=
+GenDataScriptName7=
+GenDataScriptName8=
+GenDataScriptName9=
+GenDataOdbc=No
+GenDataDelOld=No
+GenDataTitle=No
+GenDataDefNumRows=20
+GenDataCommit=0
+GenDataPacket=0
+GenDataCSV=No
+GenDataOwner=No
+GenDataProfNumb=
+GenDataProfChar=
+GenDataProfDate=
+GenTspcCrea=Yes
+GenTspcDrop=Yes
+GenTspcHead=Yes
+GenTspcFoot=Yes
+GenTspcCmmt=Yes
+GenStorCrea=Yes
+GenStorDrop=Yes
+GenStorCmmt=Yes
+GenUddtCrea=Yes
+GenUddtDval=Yes
+GenUddtChck=Yes
+GenUddtCmmt=Yes
+GenUddtDrop=Yes
+GenDeftCrea=Yes
+GenDeftCmmt=Yes
+GenDeftDrop=Yes
+GenClssCrea=Yes
+GenClssHead=Yes
+GenClssFoot=Yes
+GenClssCmmt=Yes
+GenClssDrop=Yes
+GenClssInst=Yes
+GenClssSupp=Yes
+GenClssPerm=No
+GenDtbsCrea=Yes
+GenDtbsOpts=Yes
+GenDtbsHead=Yes
+GenDtbsFoot=Yes
+GenDtbsOpen=Yes
+GenDtbsClose=Yes
+GenDtbsDrop=Yes
+GenDtbsPerm=No
+GenUserCrea=Yes
+GenUserGrant=Yes
+GenUserDrop=Yes
+GenUserPriv=No
+GenUserOpts=No
+GenGrpeCrea=Yes
+GenGrpeDrop=Yes
+GenGrpePriv=No
+GenRoleCrea=Yes
+GenRoleDrop=Yes
+GenRolePriv=No
+GenSynmCrea=Yes
+GenSynmDrop=Yes
+GenSynmTabl=Yes
+GenSynmView=Yes
+GenSynmProc=Yes
+GenSynmSynm=Yes
+GenSynmDbpk=Yes
+GenSynmSqnc=Yes
+GenTablCrea=Yes
+GenTablChck=Yes
+GenTablCntr=No
+GenTablOpts=Yes
+GenTablHead=Yes
+GenTablFoot=Yes
+GenTablCmmt=Yes
+GenTablDrop=Yes
+GenTablPerm=No
+GenColnUddt=Yes
+GenColnDval=Yes
+GenColnChck=Yes
+GenColnCntr=No
+GenColnOpts=Yes
+GenColnCmmt=Yes
+GenPkeyCrea=Yes
+GenPkeyCntr=No
+GenPkeyOpts=Yes
+GenPkeyDrop=Yes
+GenPkeyCmmt=Yes
+GenAkeyCrea=Yes
+GenAkeyCntr=No
+GenAkeyOpts=Yes
+GenAkeyDrop=Yes
+GenAkeyCmmt=Yes
+GenRefrCrea=Yes
+GenRefrCntr=Yes
+GenRefrIdcl=Yes
+GenRefrIDUR=Yes
+GenRefrIDUC=Yes
+GenRefrIDUN=Yes
+GenRefrIDUD=Yes
+GenRefrIDDR=Yes
+GenRefrIDDC=Yes
+GenRefrIDDN=Yes
+GenRefrIDDD=Yes
+GenRefrDrop=Yes
+GenRefrCmmt=Yes
+GenIndxCrea=Yes
+GenIndxOut=Yes
+GenIndxPkey=Yes
+GenIndxFkey=Yes
+GenIndxAkey=Yes
+GenIndxClus=Yes
+GenIndxOthr=Yes
+GenIndxOpts=Yes
+GenIndxCmmt=Yes
+GenIndxDrop=Yes
+GenViewCrea=Yes
+GenViewHead=Yes
+GenViewFoot=Yes
+GenViewCmmt=Yes
+GenViewDrop=Yes
+GenViewPerm=No
+GenViewOpts=Yes
+GenViewColn=No
+GenJidxCrea=Yes
+GenJidxOpts=Yes
+GenJidxHead=Yes
+GenJidxFoot=Yes
+GenJidxDrop=Yes
+GenJidxCmmt=Yes
+GenSqncCrea=Yes
+GenSqncDrop=Yes
+GenSqncCmmt=Yes
+GenSqncPerm=No
+GenTrgrCrea=Yes
+GenTrgrDrop=Yes
+GenTrgrCmmt=Yes
+GenTrgrFIns=Yes
+GenTrgrFUpd=Yes
+GenTrgrFDel=Yes
+GenTrgrFOth=Yes
+GenProcCrea=Yes
+GenProcDrop=Yes
+GenProcHead=Yes
+GenProcFoot=Yes
+GenProcCmmt=Yes
+GenProcPerm=No
+GenScriptTitle=Yes
+GenScriptNamLabl=No
+GenScriptQDtbs=Yes
+GenScriptQOwnr=Yes
+GenScriptCase=0
+GenScriptEncoding=ANSI
+GenScriptNAcct=No
+GenScriptODBC=No
+GenUseSync=No
+GenSyncChoice=0
+GenSyncArch=
+GenBackupTabl=1
+GenKeepBackTabl=1
+GenTmpTablDrop=No
+GenKeepTablOpts=No
+GenSyncRmg=0
+GenTrgrStdMsg=Yes
+GenTrgrMsgTab=
+GenTrgrMsgNo=
+GenTrgrMsgTxt=
+GenRuleCrea=Yes
+GenRuleDrop=Yes
+GenRuleCmmt=Yes
+GenSynmPathName=
+GenSynmSinglefile=Yes
+GenSynmScriptName=synonym
+GenSynmScriptName0=
+GenSynmScriptName1=
+GenSynmScriptName2=
+GenSynmScriptName3=
+GenSynmScriptName4=
+GenSynmScriptName5=
+GenSynmScriptName6=
+GenSynmScriptName7=
+GenSynmScriptName8=
+GenSynmScriptName9=
+GenSynmOdbc=No
+GenSynmTitle=No
+GenSynmOwner=No
+GenPrivPathName=
+GenPrivSinglefile=Yes
+GenPrivScriptName=privilege
+GenPrivScriptName0=
+GenPrivScriptName1=
+GenPrivScriptName2=
+GenPrivScriptName3=
+GenPrivScriptName4=
+GenPrivScriptName5=
+GenPrivScriptName6=
+GenPrivScriptName7=
+GenPrivScriptName8=
+GenPrivScriptName9=
+GenPrivOdbc=No
+GenPrivTitle=No
+GenPrivOwner=No
+GenDbpkCrea=Yes
+GenDbpkDrop=Yes
+GenDbpkPerm=No
+GenWebsCrea=Yes
+GenWebsDrop=Yes
+GenWebsCmmt=Yes
+GenMultPathName=
+GenMultSinglefile=Yes
+GenMultScriptName=synonym
+GenMultScriptName0=
+GenMultScriptName1=
+GenMultScriptName2=
+GenMultScriptName3=
+GenMultScriptName4=
+GenMultScriptName5=
+GenMultScriptName6=
+GenMultScriptName7=
+GenMultScriptName8=
+GenMultScriptName9=
+GenMultOdbc=No
+GenMultTitle=No
+GenMultOwner=No
+GenDimnCrea=Yes
+GenDimnDrop=Yes
+TrgrPreserve=No
+TrgrIns=Yes
+TrgrUpd=Yes
+TrgrDel=Yes
+TrgrC2Ins=Yes
+TrgrC2Upd=Yes
+TrgrC3=Yes
+TrgrC4=Yes
+TrgrC5=Yes
+TrgrC6=Yes
+TrgrC7=Yes
+TrgrC8=Yes
+TrgrC9=Yes
+TrgrC10=Yes
+TrgrC11=Yes
+TrgrC1=Yes
+TrgrC12Ins=Yes
+TrgrC12Upd=Yes
+TrgrC13=Yes
+
+[FolderOptions\Pdm]
+IndxIQName=%COLUMN%_%INDEXTYPE%
+IndxPK=Yes
+IndxFK=Yes
+IndxAK=Yes
+IndxPKName=%TABLE%_PK
+IndxFKName=%REFR%_FK
+IndxAKName=%AKEY%_AK
+IndxPreserve=No
+IndxThreshold=0
+RefrPreserve=No
+JidxPreserve=No
+RbldMultiFact=Yes
+RbldMultiDim=Yes
+RbldMultiJidx=Yes
+CubePreserve=No
+CubeScriptPath=
+CubeScriptCase=0
+CubeScriptEncoding=ANSI
+CubeScriptNacct=No
+CubeScriptHeader=No
+CubeScriptExt=csv
+CubeScriptExt0=txt
+CubeScriptExt1=
+CubeScriptExt2=
+CubeScriptSep=,
+CubeScriptDeli=&quot;
+DfltDomnName=D_%.U:VALUE%
+DfltColnName=D_%.U:VALUE%
+DfltReuse=Yes
+DfltDrop=Yes</a:PackageOptionsText>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Physical Objects]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+DefaultDttp=
+IgnoreOwner=No
+RebuildTrigger=Yes
+RefrUnique=No
+RefrAutoMigrate=Yes
+RefrMigrateReuse=Yes
+RefrMigrateDomain=Yes
+RefrMigrateCheck=Yes
+RefrMigrateRule=Yes
+RefrMigrateExtd=No
+RefrMigrDefaultLink=No
+RefrDfltImpl=D
+RefrPrgtColn=No
+RefrMigrateToEnd=No
+ColnFKName=%.3:PARENT%_%COLUMN%
+ColnFKNameUse=No
+DomnForbDivg=No
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyMand=No
+DomnCopyExtd=No
+DomnCopyProf=No
+Notation=0
+
+[ModelOptions\Physical Objects\NamingOptionsTemplates]
+
+[ModelOptions\Physical Objects\ClssNamingOptions]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Code]
+Template=
+MaxLen=30
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Code]
+Template=
+MaxLen=31
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Code]
+Template=
+MaxLen=24
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Code]
+Template=
+MaxLen=18
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=&quot;\/:*?&lt;&gt;|&quot;
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Connection]
+
+[ModelOptions\Pdm]
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+Notation=2
+
+[ModelOptions\Generate\Oom]
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=Yes
+ClassPrefix=
+
+[ModelOptions\Generate\Xsm]
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=No
+
+[ModelOptions\Default Opts]
+
+[ModelOptions\Default Opts\TABL]
+PhysOpts=
+
+[ModelOptions\Default Opts\COLN]
+PhysOpts=
+
+[ModelOptions\Default Opts\INDX]
+PhysOpts=
+
+[ModelOptions\Default Opts\AKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\PKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\STOR]
+PhysOpts=
+
+[ModelOptions\Default Opts\TSPC]
+PhysOpts=
+
+[ModelOptions\Default Opts\SQNC]
+PhysOpts=
+
+[ModelOptions\Default Opts\DTBS]
+PhysOpts=
+
+[ModelOptions\Default Opts\USER]
+PhysOpts=
+
+[ModelOptions\Default Opts\JIDX]
+PhysOpts=</a:ModelOptionsText>
+<c:DBMS>
+<o:Shortcut Id="o3">
+<a:ObjectID>C6D55CEA-5AAA-446A-9B08-1E1586BA837C</a:ObjectID>
+<a:Name>INFORMIX SQL 9.x</a:Name>
+<a:Code>INFORMIX9</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048986</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:TargetStereotype/>
+<a:TargetID>6EE87B23-1381-4E35-B5E5-271248D82ACC</a:TargetID>
+<a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
+</o:Shortcut>
+</c:DBMS>
+<c:PhysicalDiagrams>
+<o:PhysicalDiagram Id="o4">
+<a:ObjectID>9B7E0028-AAE2-4A9B-BA59-A9D471F7B1BB</a:ObjectID>
+<a:Name>DiagrammePhysique_1</a:Name>
+<a:Code>DIAGRAMMEPHYSIQUE_1</a:Code>
+<a:CreationDate>1707048933</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\PDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+
+[DisplayPreferences\Object]
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+File Location=No
+Display Model Version=Yes
+PckgStrn=Yes
+TablColn=Yes
+ColnMode=0
+ColnMax=5
+TablIndx=No
+TablKey=No
+TablTrgr=No
+TablOwnr=No
+TablStrn=Yes
+ColnDttp=Yes
+ColnDomn=No
+ColnShowDomn=No
+ColnKey=Yes
+ColnIndx=No
+ColnMand=No
+ColnStrn=Yes
+ViewTabl=Yes
+ViewIndx=No
+ViewColn=Yes
+ViewOwnr=No
+ViewStrn=Yes
+VColName=Yes
+VColExpr=No
+VColDttp=No
+VColIndx=No
+VColCMod=1
+VColCMax=5
+RefrName=No
+RefrJoin=No
+RefrCnam=Yes
+RefrIntg=No
+RefrImpl=No
+RefrCard=No
+RefrStrn=Yes
+RefrRole=Yes
+VRefName=No
+VRefJoin=No
+VRefStrn=Yes
+VRefRole=Yes
+ProcOwnr=No
+ProcStrn=No
+KeyStrn=Yes
+IndxStrn=Yes
+TrgrStrn=Yes
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=224 224 224
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+Line style=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PDMPCKG]
+PckgStereotypeFont=Arial,8,N
+PckgStereotypeFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\TABL]
+TablStrnFont=Arial,8,N
+TablStrnFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+TableColumnsFont=Arial,8,N
+TableColumnsFont color=0, 0, 0
+TablePkColumnsFont=Arial,8,U
+TablePkColumnsFont color=0, 0, 0
+TableFkColumnsFont=Arial,8,N
+TableFkColumnsFont color=0, 0, 0
+TableKeysFont=Arial,8,N
+TableKeysFont color=0, 0, 0
+TableIndexsFont=Arial,8,N
+TableIndexsFont color=0, 0, 0
+TableTriggersFont=Arial,8,N
+TableTriggersFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=192 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\REFR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+CARDFont=Arial,8,N
+CARDFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VREF]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VIEW]
+ViewStrnFont=Arial,8,N
+ViewStrnFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+ViewColumnnFont=Arial,8,N
+ViewColumnnFont color=0, 0, 0
+ViewIndexesFont=Arial,8,N
+ViewIndexesFont color=0, 0, 0
+ViewTablesFont=Arial,8,N
+ViewTablesFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PROC]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4000
+Height=1000
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+NAMEFont=Arial,8,N
+NAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+OBJXSTRFont=Arial,8,N
+OBJXSTRFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8500, 11000)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<c:Symbols>
+<o:TableSymbol Id="o5">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((9246,26954), (25825,35693))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o6"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o7">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049027</a:ModificationDate>
+<a:Rect>((-17358,21871), (6637,34505))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o8"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o9">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-66843,28901), (-56289,35693))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o10"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o11">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-53788,28901), (-43234,35693))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o12"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o13">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049023</a:ModificationDate>
+<a:Rect>((-40409,18517), (-19427,34073))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o14"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o15">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((11948,-15134), (41580,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o16"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o17">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-16941,-15134), (9447,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o18"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o19">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((44081,-14160), (66840,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o20"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o21">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((42311,6397), (66227,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o22"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o23">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((28326,25980), (38727,35693))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o24"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o25">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-22291,-32770), (-12199,-22083))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o26"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o27">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((41228,29875), (51088,35693))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o28"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o29">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-45678,-17082), (-35124,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o30"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o31">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((14962,6397), (25054,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o32"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o33">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-66843,-35691), (-52118,-22083))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o34"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o35">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-36715,-28875), (-24792,-22083))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o36"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o37">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((27555,8344), (39810,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o38"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o39">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-32623,-14160), (-19442,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o40"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o41">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-49617,-27901), (-39216,-22083))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o42"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o43">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-22273,2502), (-10327,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o44"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o45">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-7826,5423), (12461,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o46"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o47">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-66843,-16108), (-48179,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o48"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o49">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-66843,4449), (-48333,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o50"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o51">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((-45832,-420), (-24774,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o52"/>
+</c:Object>
+</o:TableSymbol>
+</c:Symbols>
+</o:PhysicalDiagram>
+</c:PhysicalDiagrams>
+<c:DefaultDiagram>
+<o:PhysicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Tables>
+<o:Table Id="o6">
+<a:ObjectID>DEAA86DC-8FCA-4EC2-B322-B84C1DB71405</a:ObjectID>
+<a:Name>`advertisers`</a:Name>
+<a:Code>`advertisers`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o53">
+<a:ObjectID>F08A0250-4489-420F-8C76-3AA7E8A5A5F6</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o54">
+<a:ObjectID>35C3BB67-22EB-4A0B-973A-5C27B7C0457F</a:ObjectID>
+<a:Name>`user_id`</a:Name>
+<a:Code>`user_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o55">
+<a:ObjectID>7FCE72FA-FE10-4FEA-BD69-B4E2D1D1C222</a:ObjectID>
+<a:Name>`act_id`</a:Name>
+<a:Code>`act_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o56">
+<a:ObjectID>B58D9548-9737-4C1B-A53D-A998E6595C1A</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o57">
+<a:ObjectID>DA5C730C-AECC-4DF1-A445-26FD4E6A51FE</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o58">
+<a:ObjectID>DC28434C-2E9A-47F6-AA79-23B29E9DCC0E</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o59">
+<a:ObjectID>7B0FE53A-3E89-4065-877B-4603287C0D43</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`advertisers_act_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o8">
+<a:ObjectID>21A48552-08D3-4A4D-AE26-3EDD7F7B01DB</a:ObjectID>
+<a:Name>`businesses`</a:Name>
+<a:Code>`businesses`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o60">
+<a:ObjectID>8183D345-5C52-4C98-8B23-5DBF10F61A0C</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o61">
+<a:ObjectID>98BA4B78-A99E-4F31-B3F7-391AFEC82E07</a:ObjectID>
+<a:Name>`user_id`</a:Name>
+<a:Code>`user_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o62">
+<a:ObjectID>97FC5E35-ABBF-43F8-A8F6-60701D2A7713</a:ObjectID>
+<a:Name>`location_id`</a:Name>
+<a:Code>`location_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o63">
+<a:ObjectID>DE76392E-9E94-460D-AE02-00277431D486</a:ObjectID>
+<a:Name>`longitude`</a:Name>
+<a:Code>`longitude`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o64">
+<a:ObjectID>7DF227CA-9F0D-4967-9875-3429EFD5844A</a:ObjectID>
+<a:Name>`altitude`</a:Name>
+<a:Code>`altitude`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o65">
+<a:ObjectID>663FDF4B-B090-4985-82EE-2C6E73F7C824</a:ObjectID>
+<a:Name>`business_type_id`</a:Name>
+<a:Code>`business_type_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o66">
+<a:ObjectID>43E71311-A0FE-46EE-A973-6FF10AA36ACD</a:ObjectID>
+<a:Name>`business_activity_id`</a:Name>
+<a:Code>`business_activity_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o67">
+<a:ObjectID>6853AC8A-AE43-49BC-BD91-52C8C4821B8C</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o68">
+<a:ObjectID>A7940AEC-7076-4E32-939A-0973E65D0BE8</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o69">
+<a:ObjectID>3F320927-EAC3-4FEC-B8C4-0073B0927BE2</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o70">
+<a:ObjectID>DA89D4A1-12FF-46F1-9651-D8A931D6152D</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`businesses_business_activity_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o10">
+<a:ObjectID>867CCA1F-349B-4976-9123-3342E9D70698</a:ObjectID>
+<a:Name>`business_activities`</a:Name>
+<a:Code>`business_activities`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o71">
+<a:ObjectID>7E24E3E8-85E4-4638-8941-06AF69C5465E</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o72">
+<a:ObjectID>EE554F30-E1C5-464B-978E-FEAC15973AD4</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o73">
+<a:ObjectID>C941209D-FDF3-4C27-87CB-47114881065D</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o74">
+<a:ObjectID>63EB37CD-4DE4-4EBC-ABDF-1862B4F9BC26</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o75">
+<a:ObjectID>AC20E60F-668A-425F-A18B-19FEE466928B</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o12">
+<a:ObjectID>939DA832-BFC3-4305-8AAF-0C0B7C73F91F</a:ObjectID>
+<a:Name>`business_types`</a:Name>
+<a:Code>`business_types`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o76">
+<a:ObjectID>AC62A0EC-0A54-4C19-A4A6-2AC6ADBCC483</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o77">
+<a:ObjectID>BD452BAF-C793-4D4B-B448-336606353AC7</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o78">
+<a:ObjectID>D2258CC4-9510-4383-BBC0-EEACB6A0D6AB</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o79">
+<a:ObjectID>459F63C0-8AFC-4E74-A71A-73B1E797C087</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o80">
+<a:ObjectID>9A18C4A8-B3CE-4BE1-B3A7-E5164DEF9826</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o14">
+<a:ObjectID>686366DA-FD71-49C9-B01F-1EAE0CCECEC9</a:ObjectID>
+<a:Name>`campaigns`</a:Name>
+<a:Code>`campaigns`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o81">
+<a:ObjectID>78592BEC-9B88-4793-B80E-4ABC57C25893</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o82">
+<a:ObjectID>CD8710AF-92F5-43EA-9078-8C6F34674EFD</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o83">
+<a:ObjectID>329EF995-E4E3-439A-A2C5-A9D68E7FCCCA</a:ObjectID>
+<a:Name>`budget_max`</a:Name>
+<a:Code>`budget_max`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>double(8,2)</a:DataType>
+<a:Length>8</a:Length>
+<a:Precision>2</a:Precision>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o84">
+<a:ObjectID>C43DED24-F740-4012-853F-CF650DE418D3</a:ObjectID>
+<a:Name>`begin_date`</a:Name>
+<a:Code>`begin_date`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>date</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o85">
+<a:ObjectID>9D98A21A-9995-4E5D-B0CB-D820FBC7D14B</a:ObjectID>
+<a:Name>`end_date`</a:Name>
+<a:Code>`end_date`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>date</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o86">
+<a:ObjectID>99B20CE9-917A-42C4-928B-04566FD39CEB</a:ObjectID>
+<a:Name>`file`</a:Name>
+<a:Code>`file`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o87">
+<a:ObjectID>612E45E1-3499-418C-8708-291255E7ABDC</a:ObjectID>
+<a:Name>`display_hours`</a:Name>
+<a:Code>`display_hours`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>time</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o88">
+<a:ObjectID>55C2E271-8E12-463C-8D35-6634FF720496</a:ObjectID>
+<a:Name>`status`</a:Name>
+<a:Code>`status`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>enum(&#39;actif&#39;,&#39;pending&#39;,&#39;inactif&#39;,&#39;finished&#39;)</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o89">
+<a:ObjectID>E848DBF3-A263-48D5-B0B3-C9F61525E87C</a:ObjectID>
+<a:Name>`url`</a:Name>
+<a:Code>`url`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o90">
+<a:ObjectID>FFE7DF4D-8A26-4B03-A166-AE52F90C4A57</a:ObjectID>
+<a:Name>`advertiser_id`</a:Name>
+<a:Code>`advertiser_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o91">
+<a:ObjectID>50DB70BA-99BE-4077-B602-F59BAE9DC541</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o92">
+<a:ObjectID>1807E1C4-FB33-464F-86D7-AB28CF8F8F95</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o93">
+<a:ObjectID>53FE4499-0D45-4CAB-A5E6-D20D8FA9311E</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o94">
+<a:ObjectID>F0AF83CA-5125-4359-9780-6AA8ECCE9A20</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaigns_advertiser_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o16">
+<a:ObjectID>AF2AF996-79CE-41D4-9CC3-E786153C62D9</a:ObjectID>
+<a:Name>`campaign_businessactivities`</a:Name>
+<a:Code>`campaign_businessactivities`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o95">
+<a:ObjectID>587D63A3-7B4A-4876-B5BC-3989243FBC5A</a:ObjectID>
+<a:Name>`businessActivity_id`</a:Name>
+<a:Code>`businessActivity_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o96">
+<a:ObjectID>BC8C9095-1D44-474C-A2CC-C796EAAACA5B</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o97">
+<a:ObjectID>1B933245-EB1D-44EF-B02B-34A82171F03F</a:ObjectID>
+<a:Name>`campaign_name`</a:Name>
+<a:Code>`campaign_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o98">
+<a:ObjectID>25AC089F-8576-42C6-BF18-3EEDE7483602</a:ObjectID>
+<a:Name>`activity_name`</a:Name>
+<a:Code>`activity_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o99">
+<a:ObjectID>CD00D371-693F-45BE-A60E-B4B2F928AB63</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o100">
+<a:ObjectID>18FE8576-9A87-4E1B-8377-324DB89476CC</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o101">
+<a:ObjectID>94F5C454-CA42-4794-ABC2-F2390AF6A9C7</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`businessActivity_id`,`campaign_id`</a:DataType>
+</o:Column>
+<o:Column Id="o102">
+<a:ObjectID>B8309F58-4938-4F77-BC22-67C127501026</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_businessactivities_businessactivity_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o18">
+<a:ObjectID>27316F02-86BF-462E-AACD-52C3734ACD42</a:ObjectID>
+<a:Name>`campaign_businesstype`</a:Name>
+<a:Code>`campaign_businesstype`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o103">
+<a:ObjectID>8B91FBFC-755A-4B1E-8926-A565C2689CAC</a:ObjectID>
+<a:Name>`businesstype_id`</a:Name>
+<a:Code>`businesstype_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o104">
+<a:ObjectID>2B21CAF4-E6F4-4325-A9D0-78127A776EDC</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o105">
+<a:ObjectID>1271AECA-B575-47FB-8AAA-7757B2DF2B21</a:ObjectID>
+<a:Name>`campaign_name`</a:Name>
+<a:Code>`campaign_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o106">
+<a:ObjectID>0F632550-4D18-45A9-A324-61F13234DAF1</a:ObjectID>
+<a:Name>`type_name`</a:Name>
+<a:Code>`type_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o107">
+<a:ObjectID>8218F82B-554C-4AB0-82B4-2F6893C96B0F</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o108">
+<a:ObjectID>4A560137-B96F-4AAE-A0E6-F09AB14B2FB3</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o109">
+<a:ObjectID>9DD3A1A2-27CE-4EDE-A776-5DA3F6D31C01</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`businesstype_id`,`campaign_id`</a:DataType>
+</o:Column>
+<o:Column Id="o110">
+<a:ObjectID>FCBC9417-5CA2-48B0-A3D5-B6FCEF1B6F7F</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_businesstype_businesstype_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o20">
+<a:ObjectID>42C7D1E4-C904-4227-9B0B-D0D8F871A35C</a:ObjectID>
+<a:Name>`campaign_locations`</a:Name>
+<a:Code>`campaign_locations`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o111">
+<a:ObjectID>95637F00-6D24-48BB-BFA4-8948F572C411</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o112">
+<a:ObjectID>031F0C10-2DE8-4AF0-AB15-A83FD9782345</a:ObjectID>
+<a:Name>`location_id`</a:Name>
+<a:Code>`location_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o113">
+<a:ObjectID>89BF144A-3788-4A85-9B8E-2D6E05CAA78B</a:ObjectID>
+<a:Name>`radius`</a:Name>
+<a:Code>`radius`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o114">
+<a:ObjectID>729CEFC5-1511-448B-B80B-F9DED0BC736B</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o115">
+<a:ObjectID>3BFA2E99-E4FE-4D0B-9585-43CE3451671C</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o116">
+<a:ObjectID>8A4BB573-0FA8-41EA-A4D2-F042F5070CB5</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`campaign_id`,`location_id`</a:DataType>
+</o:Column>
+<o:Column Id="o117">
+<a:ObjectID>D8DA7FB8-134F-4AB5-B944-08410B4C02A3</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_locations_campaign_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o22">
+<a:ObjectID>0A0C14A6-3331-4366-9E90-B78D9B1A59FD</a:ObjectID>
+<a:Name>`campaign_placements`</a:Name>
+<a:Code>`campaign_placements`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o118">
+<a:ObjectID>FB33DEC4-4E7F-4396-9245-A253715BF479</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o119">
+<a:ObjectID>A8F7B5FB-0895-4567-8285-5E491DDB738A</a:ObjectID>
+<a:Name>`placement_id`</a:Name>
+<a:Code>`placement_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o120">
+<a:ObjectID>A16CDFA8-BF72-4945-A8FB-B864A2D4ED21</a:ObjectID>
+<a:Name>`tracking_id`</a:Name>
+<a:Code>`tracking_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o121">
+<a:ObjectID>81760043-06C2-4F5C-AACC-38E1CEA8ECBA</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o122">
+<a:ObjectID>28070A2D-E905-4F4D-B801-88A9E1FE5290</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o123">
+<a:ObjectID>2A24DDFE-504F-4943-805A-BDFBE6F89B38</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`campaign_id`,`placement_id`</a:DataType>
+</o:Column>
+<o:Column Id="o124">
+<a:ObjectID>204AA157-C887-48BF-944A-DA705D040D88</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_placements_campaign_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o24">
+<a:ObjectID>332A1013-EB00-4B37-A5BA-4D9EDFE870DA</a:ObjectID>
+<a:Name>`failed_jobs`</a:Name>
+<a:Code>`failed_jobs`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o125">
+<a:ObjectID>92A33437-8E13-4A12-8794-4445F1B914C5</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o126">
+<a:ObjectID>DF9A39A3-59F7-4AAA-A9CD-8F99F0910576</a:ObjectID>
+<a:Name>`uuid`</a:Name>
+<a:Code>`uuid`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o127">
+<a:ObjectID>8524A0B4-DEF8-449A-A4BF-A6B138710144</a:ObjectID>
+<a:Name>`connection`</a:Name>
+<a:Code>`connection`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>text</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o128">
+<a:ObjectID>5FD58DDA-0241-46CD-9B1D-3F513C9BEED5</a:ObjectID>
+<a:Name>`queue`</a:Name>
+<a:Code>`queue`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>text</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o129">
+<a:ObjectID>E6E94956-E1B9-4427-BD93-AA1AFA28667F</a:ObjectID>
+<a:Name>`payload`</a:Name>
+<a:Code>`payload`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>longtext</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o130">
+<a:ObjectID>3455796F-75CB-4AC9-BDED-F8537A102BEB</a:ObjectID>
+<a:Name>`exception`</a:Name>
+<a:Code>`exception`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>longtext</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o131">
+<a:ObjectID>93850F28-B917-43F5-8736-8CC6ED389C17</a:ObjectID>
+<a:Name>`failed_at`</a:Name>
+<a:Code>`failed_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o132">
+<a:ObjectID>C8C0E671-9F3C-4C79-ACAA-370A60C1DB75</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o26">
+<a:ObjectID>72A823EF-89D2-4DE2-A3B1-5131006FC612</a:ObjectID>
+<a:Name>`locations`</a:Name>
+<a:Code>`locations`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o133">
+<a:ObjectID>6A5A9E5C-86C8-4BA8-8878-91D1A39F8B22</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o134">
+<a:ObjectID>DD07751A-0D2E-4D11-9CB9-5B54CB24A908</a:ObjectID>
+<a:Name>`region`</a:Name>
+<a:Code>`region`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o135">
+<a:ObjectID>7B8E7E91-5566-460B-AFFE-7BF79EBC2FA3</a:ObjectID>
+<a:Name>`city`</a:Name>
+<a:Code>`city`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o136">
+<a:ObjectID>55B601E5-00A9-4098-9472-F35B5836171A</a:ObjectID>
+<a:Name>`secteur`</a:Name>
+<a:Code>`secteur`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o137">
+<a:ObjectID>1A27CFE3-CA4A-4612-92F1-7A47EC17DC39</a:ObjectID>
+<a:Name>`longitude`</a:Name>
+<a:Code>`longitude`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o138">
+<a:ObjectID>4C673A1D-0CED-4E7D-8429-3210A63EA349</a:ObjectID>
+<a:Name>`altitude`</a:Name>
+<a:Code>`altitude`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o139">
+<a:ObjectID>0FC2FFE9-BA76-4E44-A049-8AAF0BE0C447</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o140">
+<a:ObjectID>A232C561-141E-4404-A399-7E3FBBB001E6</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o141">
+<a:ObjectID>1318830E-FA3D-4817-8525-D6F1590BEDCF</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o28">
+<a:ObjectID>309522A6-30DD-4125-8C2E-909448805100</a:ObjectID>
+<a:Name>`migrations`</a:Name>
+<a:Code>`migrations`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o142">
+<a:ObjectID>EE91EA86-798F-4F61-916D-F689C3647F33</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o143">
+<a:ObjectID>54EAC6E3-FE83-4F7E-BE4F-3203302C524D</a:ObjectID>
+<a:Name>`migration`</a:Name>
+<a:Code>`migration`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o144">
+<a:ObjectID>69469924-0902-4378-9386-77534F3E2067</a:ObjectID>
+<a:Name>`batch`</a:Name>
+<a:Code>`batch`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o145">
+<a:ObjectID>A7698B38-985E-4FA8-BFEC-1017EE2C3E4E</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o30">
+<a:ObjectID>43E93360-EFA6-4DC3-950D-2F14BA1EED48</a:ObjectID>
+<a:Name>`oauth_access_tokens`</a:Name>
+<a:Code>`oauth_access_tokens`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o146">
+<a:ObjectID>B17852DC-4C2F-4BCE-957D-1D933BF4ABE1</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o147">
+<a:ObjectID>1AF1BC6B-3210-4F15-9A18-3FE7E0882F0C</a:ObjectID>
+<a:Name>`user_id`</a:Name>
+<a:Code>`user_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o148">
+<a:ObjectID>3ABECC16-1A87-4E3C-87D4-44BF4CCAAB58</a:ObjectID>
+<a:Name>`client_id`</a:Name>
+<a:Code>`client_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>char(36)</a:DataType>
+<a:Length>36</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o149">
+<a:ObjectID>6E0C37C4-006A-418C-BE25-CE5A5615418D</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o150">
+<a:ObjectID>21D5C6E0-1F91-4260-987F-BBE529AFE6C5</a:ObjectID>
+<a:Name>`scopes`</a:Name>
+<a:Code>`scopes`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>text</a:DataType>
+</o:Column>
+<o:Column Id="o151">
+<a:ObjectID>70646C86-E4A9-4480-B0B2-C3FB5239619A</a:ObjectID>
+<a:Name>`revoked`</a:Name>
+<a:Code>`revoked`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o152">
+<a:ObjectID>14C5BC02-753D-4169-BDCF-F6705E48FBAE</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o153">
+<a:ObjectID>C2087AF1-E680-4BAE-8268-7F33A8A66972</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o154">
+<a:ObjectID>C78666E2-43F2-4A88-BD93-25DDC1DEBF45</a:ObjectID>
+<a:Name>`expires_at`</a:Name>
+<a:Code>`expires_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o155">
+<a:ObjectID>F48BDDD2-42B5-40A8-A68C-AD23FC3B901C</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o32">
+<a:ObjectID>3535EDE0-9B60-47A7-AB68-996519CA3E24</a:ObjectID>
+<a:Name>`oauth_auth_codes`</a:Name>
+<a:Code>`oauth_auth_codes`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o156">
+<a:ObjectID>FF086A26-710D-40A0-AE2C-579AB652A2C8</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o157">
+<a:ObjectID>FB58B82D-CC25-4234-AC2A-27F8B233BE34</a:ObjectID>
+<a:Name>`user_id`</a:Name>
+<a:Code>`user_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o158">
+<a:ObjectID>CEABBD67-1886-49FA-8465-937310F1B15D</a:ObjectID>
+<a:Name>`client_id`</a:Name>
+<a:Code>`client_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>char(36)</a:DataType>
+<a:Length>36</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o159">
+<a:ObjectID>F7861728-0FCA-43CD-8DBE-909E22EA6838</a:ObjectID>
+<a:Name>`scopes`</a:Name>
+<a:Code>`scopes`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>text</a:DataType>
+</o:Column>
+<o:Column Id="o160">
+<a:ObjectID>22D15030-164C-4075-B922-F64D2BDBF8DE</a:ObjectID>
+<a:Name>`revoked`</a:Name>
+<a:Code>`revoked`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o161">
+<a:ObjectID>3A8AF89E-4A36-4B6C-8745-7B8E0208AF34</a:ObjectID>
+<a:Name>`expires_at`</a:Name>
+<a:Code>`expires_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o162">
+<a:ObjectID>1110E8BF-687C-4DAE-9FF2-8C1941B4875C</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o34">
+<a:ObjectID>04A9516C-F014-4085-B24F-ED431B9D8AC5</a:ObjectID>
+<a:Name>`oauth_clients`</a:Name>
+<a:Code>`oauth_clients`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o163">
+<a:ObjectID>F5177AA7-4A73-4999-AFC5-1253757A07A3</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>char(36)</a:DataType>
+<a:Length>36</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o164">
+<a:ObjectID>DAC59D40-603C-4B83-BF39-B7DD03F3229A</a:ObjectID>
+<a:Name>`user_id`</a:Name>
+<a:Code>`user_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o165">
+<a:ObjectID>CD7EFF83-F246-44E2-ACD6-1F4FE08B3F60</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o166">
+<a:ObjectID>147829A3-D429-408F-B452-0F9D27AD48F5</a:ObjectID>
+<a:Name>`secret`</a:Name>
+<a:Code>`secret`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o167">
+<a:ObjectID>F18ECCB5-3CE6-4195-8B98-03A420A8CA09</a:ObjectID>
+<a:Name>`provider`</a:Name>
+<a:Code>`provider`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o168">
+<a:ObjectID>3DD3B762-F393-4438-9C38-DF203A750153</a:ObjectID>
+<a:Name>`redirect`</a:Name>
+<a:Code>`redirect`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>text</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o169">
+<a:ObjectID>723321D7-2401-4ECB-BBF9-F6A0B17DF6B9</a:ObjectID>
+<a:Name>`personal_access_client`</a:Name>
+<a:Code>`personal_access_client`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o170">
+<a:ObjectID>33054707-8D4C-4773-822A-248F1FE5E4B1</a:ObjectID>
+<a:Name>`password_client`</a:Name>
+<a:Code>`password_client`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o171">
+<a:ObjectID>60EFFE4F-53AB-45A0-ABAD-FFCAD534CD73</a:ObjectID>
+<a:Name>`revoked`</a:Name>
+<a:Code>`revoked`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o172">
+<a:ObjectID>17C3D117-4D5B-4F22-B82B-94D5EE21F4D8</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o173">
+<a:ObjectID>BB13BB29-47FB-49CD-8A3D-33597ABF65E5</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o174">
+<a:ObjectID>D63286CD-B213-4431-A0E8-571A6A64B7A7</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o36">
+<a:ObjectID>86E00978-5232-433B-8D43-F79FE009F217</a:ObjectID>
+<a:Name>`oauth_personal_access_clients`</a:Name>
+<a:Code>`oauth_personal_access_clients`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o175">
+<a:ObjectID>EB08DBB9-E852-40FC-9085-91698F943156</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o176">
+<a:ObjectID>901B6028-BD80-4EC7-AD0C-2A50EC1C37B7</a:ObjectID>
+<a:Name>`client_id`</a:Name>
+<a:Code>`client_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>char(36)</a:DataType>
+<a:Length>36</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o177">
+<a:ObjectID>2C1B6991-19B4-48A9-BB89-7F3D64260145</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o178">
+<a:ObjectID>93296C5C-5711-45E6-BC7F-BB5A91F9A802</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o179">
+<a:ObjectID>2AE3BB75-AB19-4ED5-8E85-82A158C1073B</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o38">
+<a:ObjectID>FBC99E16-3867-409E-9894-31379EB751B2</a:ObjectID>
+<a:Name>`oauth_refresh_tokens`</a:Name>
+<a:Code>`oauth_refresh_tokens`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o180">
+<a:ObjectID>0B7AFAC4-280A-4E9D-9682-8B0343A348DF</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o181">
+<a:ObjectID>F108D195-1941-4538-9334-0558CDC09482</a:ObjectID>
+<a:Name>`access_token_id`</a:Name>
+<a:Code>`access_token_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o182">
+<a:ObjectID>6A46AA1F-36A1-4615-A39C-094CA2EB8382</a:ObjectID>
+<a:Name>`revoked`</a:Name>
+<a:Code>`revoked`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>tinyint(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o183">
+<a:ObjectID>6E6B9FE4-193A-48FA-BCB2-7D7AC1C69C4E</a:ObjectID>
+<a:Name>`expires_at`</a:Name>
+<a:Code>`expires_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o184">
+<a:ObjectID>22D09B89-B780-427B-9D74-05AE30ECD5DD</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o40">
+<a:ObjectID>A133D428-BF1A-492B-8D3F-60CEF0DC0FE8</a:ObjectID>
+<a:Name>`parameters`</a:Name>
+<a:Code>`parameters`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o185">
+<a:ObjectID>E3748375-91CE-4048-9288-5F540657DF4C</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o186">
+<a:ObjectID>7CB86F60-15BA-4961-B8D6-55198F8D45B9</a:ObjectID>
+<a:Name>`ad_price_advertiser`</a:Name>
+<a:Code>`ad_price_advertiser`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>double(8,2)</a:DataType>
+<a:Length>8</a:Length>
+<a:Precision>2</a:Precision>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o187">
+<a:ObjectID>7A337AC4-13A8-4C3A-81D7-6560C2042318</a:ObjectID>
+<a:Name>`ad_price_business`</a:Name>
+<a:Code>`ad_price_business`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>double(8,2)</a:DataType>
+<a:Length>8</a:Length>
+<a:Precision>2</a:Precision>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o188">
+<a:ObjectID>02C2EC80-B233-42F6-A760-2464B2A4D42D</a:ObjectID>
+<a:Name>`com_display_time`</a:Name>
+<a:Code>`com_display_time`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>double(8,2)</a:DataType>
+<a:Length>8</a:Length>
+<a:Precision>2</a:Precision>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o189">
+<a:ObjectID>9C6C68C3-4AC6-4770-99A3-C13AF8A2189D</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o190">
+<a:ObjectID>2141F7C3-18B6-4E02-9982-AA16E64182C3</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o191">
+<a:ObjectID>3408F3C9-5AF3-4301-84A0-52CB2557C24B</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o42">
+<a:ObjectID>1F101F9A-FD7B-4D5E-8BF3-A2276D29262E</a:ObjectID>
+<a:Name>`password_reset_tokens`</a:Name>
+<a:Code>`password_reset_tokens`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o192">
+<a:ObjectID>DB468AD9-A6C7-4679-B2B6-38FB852C1FFD</a:ObjectID>
+<a:Name>`email`</a:Name>
+<a:Code>`email`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o193">
+<a:ObjectID>71C9BFC9-D885-4B25-86AF-7EC04EDCF56B</a:ObjectID>
+<a:Name>`token`</a:Name>
+<a:Code>`token`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o194">
+<a:ObjectID>269CF871-8738-4585-937B-CAA159FD09BC</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o195">
+<a:ObjectID>5ABE9E89-A1EC-4F4F-82DB-FB53190307E5</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`email`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o44">
+<a:ObjectID>96233B8B-65D1-4B88-BC48-2DCA7AB41BF9</a:ObjectID>
+<a:Name>`personal_access_tokens`</a:Name>
+<a:Code>`personal_access_tokens`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o196">
+<a:ObjectID>B91EE280-5F2C-449C-AC92-40B822E984F1</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o197">
+<a:ObjectID>D173AE3C-5CBA-40FE-A31F-5B7166939DFA</a:ObjectID>
+<a:Name>`tokenable_type`</a:Name>
+<a:Code>`tokenable_type`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o198">
+<a:ObjectID>A12D1E7C-9814-4054-9F64-6C58D92E151E</a:ObjectID>
+<a:Name>`tokenable_id`</a:Name>
+<a:Code>`tokenable_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>bigint(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o199">
+<a:ObjectID>8C5E9F8D-B56A-4953-BB77-1DDC184BC9A1</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o200">
+<a:ObjectID>26EDEEC3-A009-4AF0-B302-3FCB501ADD23</a:ObjectID>
+<a:Name>`token`</a:Name>
+<a:Code>`token`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(64)</a:DataType>
+<a:Length>64</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o201">
+<a:ObjectID>95E6A3C3-0E5C-4185-BDA4-7ABB44DFD23D</a:ObjectID>
+<a:Name>`abilities`</a:Name>
+<a:Code>`abilities`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>text</a:DataType>
+</o:Column>
+<o:Column Id="o202">
+<a:ObjectID>3733C287-430D-4078-B5E1-AD92B5DC375D</a:ObjectID>
+<a:Name>`last_used_at`</a:Name>
+<a:Code>`last_used_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o203">
+<a:ObjectID>30853703-3092-4259-A9D1-C849FED34FCE</a:ObjectID>
+<a:Name>`expires_at`</a:Name>
+<a:Code>`expires_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o204">
+<a:ObjectID>4C865226-BD23-429F-AB64-36D20F683252</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o205">
+<a:ObjectID>A794C016-7268-4F02-B2F0-925D88471E56</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o206">
+<a:ObjectID>D894A3EF-031A-4A1F-B382-2995AA3A83DF</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o46">
+<a:ObjectID>A07A3724-6609-4FA6-8798-E857C9AC84F5</a:ObjectID>
+<a:Name>`placements`</a:Name>
+<a:Code>`placements`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o207">
+<a:ObjectID>19C7879C-1A0F-490D-A6B5-4C69E0064D62</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o208">
+<a:ObjectID>CF8B7187-18EB-4DF6-9F86-0AE1BDA328C8</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o209">
+<a:ObjectID>3B3BF35A-836B-49D6-BDFD-495785B49520</a:ObjectID>
+<a:Name>`remember_token`</a:Name>
+<a:Code>`remember_token`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o210">
+<a:ObjectID>2B7F468E-C5C6-4829-B8BA-2FEC0274E9A5</a:ObjectID>
+<a:Name>`business_id`</a:Name>
+<a:Code>`business_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o211">
+<a:ObjectID>1F8AB70C-B1B0-4521-86B1-7194D4872A28</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o212">
+<a:ObjectID>5BCA3CD6-BB89-4FB1-BD9E-794505864CBC</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o213">
+<a:ObjectID>0143F92E-F13A-4A56-8862-14F4EDA86934</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o214">
+<a:ObjectID>C07C0300-4181-4585-80B6-2CF768E9B4F3</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`placements_business_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o48">
+<a:ObjectID>9512AA86-EA5F-4879-A3AC-FE8E4E4C4EFC</a:ObjectID>
+<a:Name>`schedules`</a:Name>
+<a:Code>`schedules`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o215">
+<a:ObjectID>259AA33D-9858-4B00-B94A-C5416ABFB5C8</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o216">
+<a:ObjectID>AC4334DC-4B89-42AD-8696-2F35EFA30251</a:ObjectID>
+<a:Name>`opening_hour`</a:Name>
+<a:Code>`opening_hour`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>time</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o217">
+<a:ObjectID>EE7D35C8-5A98-4804-8849-39B684830889</a:ObjectID>
+<a:Name>`closing_hour`</a:Name>
+<a:Code>`closing_hour`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>time</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o218">
+<a:ObjectID>7C74BF49-1F18-43F1-B486-706CD83B97ED</a:ObjectID>
+<a:Name>`day`</a:Name>
+<a:Code>`day`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(10)</a:DataType>
+<a:Length>10</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o219">
+<a:ObjectID>348A57CE-CA8F-4A93-BC76-FBC7568E4AAA</a:ObjectID>
+<a:Name>`business_id`</a:Name>
+<a:Code>`business_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o220">
+<a:ObjectID>F17EAD88-96EC-40D6-ADC8-B8D61E84BE9D</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o221">
+<a:ObjectID>D5433BB9-27EB-4D56-9F5F-CD555DEAF848</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o222">
+<a:ObjectID>459340F9-897A-41B8-BC24-6A996842E5C4</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o223">
+<a:ObjectID>34C01D73-DDD5-4C42-AB81-BE66D30B1693</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`schedules_business_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o50">
+<a:ObjectID>83F45A0C-8965-464D-A221-A9C051C48F79</a:ObjectID>
+<a:Name>`trackings`</a:Name>
+<a:Code>`trackings`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o224">
+<a:ObjectID>5A118357-46BF-46C7-B634-80D9426A4642</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o225">
+<a:ObjectID>E20C5179-44EE-4CEC-9D6B-5BB86E99DC36</a:ObjectID>
+<a:Name>`type`</a:Name>
+<a:Code>`type`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o226">
+<a:ObjectID>2A5C1DFD-46CA-48F6-8474-A0E5CCCC61A6</a:ObjectID>
+<a:Name>`date`</a:Name>
+<a:Code>`date`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o227">
+<a:ObjectID>C6406B79-C3CD-4788-BCD5-7A525DFD714F</a:ObjectID>
+<a:Name>`display_time`</a:Name>
+<a:Code>`display_time`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>time</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o228">
+<a:ObjectID>2513D22A-DEE6-429B-A7C4-AEFC69F833E7</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o229">
+<a:ObjectID>6EAD0EDE-9AFE-45F3-A689-FC4C501B3F15</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o230">
+<a:ObjectID>28F50FC6-AF88-4103-8A53-3610B3F8C0AF</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o231">
+<a:ObjectID>B17F8D13-F46C-478C-AE39-96064C6ED04C</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+<o:Column Id="o232">
+<a:ObjectID>1B44AC2A-42C5-4FC3-8205-A0B15624F3B3</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`trackings_campaign_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o52">
+<a:ObjectID>24695C27-0770-4699-8DB2-47B0BEFFCDC6</a:ObjectID>
+<a:Name>`users`</a:Name>
+<a:Code>`users`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o233">
+<a:ObjectID>66D22F74-DF0D-4F72-8731-F1A874BED23A</a:ObjectID>
+<a:Name>`id`</a:Name>
+<a:Code>`id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o234">
+<a:ObjectID>EE2DFCE8-A41C-4BC7-8B2F-7039CC40058D</a:ObjectID>
+<a:Name>`email`</a:Name>
+<a:Code>`email`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(65)</a:DataType>
+<a:Length>65</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o235">
+<a:ObjectID>4DF169EF-E9B6-4A42-8D4A-722BD89636DB</a:ObjectID>
+<a:Name>`password`</a:Name>
+<a:Code>`password`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o236">
+<a:ObjectID>B84858E4-62A2-4313-8330-B7D063528465</a:ObjectID>
+<a:Name>`name`</a:Name>
+<a:Code>`name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o237">
+<a:ObjectID>F3D5BA1E-155A-4100-BF7E-FDEB75775B25</a:ObjectID>
+<a:Name>`phone`</a:Name>
+<a:Code>`phone`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(45)</a:DataType>
+<a:Length>45</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o238">
+<a:ObjectID>90C40713-C100-4411-B3B4-67C73C89C39D</a:ObjectID>
+<a:Name>`address`</a:Name>
+<a:Code>`address`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o239">
+<a:ObjectID>FB5811B7-5279-4B20-BF17-8944A48D154C</a:ObjectID>
+<a:Name>`email_verified_at`</a:Name>
+<a:Code>`email_verified_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o240">
+<a:ObjectID>21F20E66-AF56-4F54-9A88-889F8095C6F1</a:ObjectID>
+<a:Name>`status`</a:Name>
+<a:Code>`status`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>enum(&#39;0&#39;,&#39;1&#39;)</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o241">
+<a:ObjectID>5CC6AD25-6B7E-43FE-A7B3-88D307233C44</a:ObjectID>
+<a:Name>`api_token`</a:Name>
+<a:Code>`api_token`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(80)</a:DataType>
+<a:Length>80</a:Length>
+</o:Column>
+<o:Column Id="o242">
+<a:ObjectID>01DC2DE1-EA35-42F7-B631-4AC0C176CFAC</a:ObjectID>
+<a:Name>`role`</a:Name>
+<a:Code>`role`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>enum(&#39;advertiser&#39;,&#39;business&#39;,&#39;admin&#39;)</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o243">
+<a:ObjectID>D6011DD7-B5E9-4688-9817-35DE57424E65</a:ObjectID>
+<a:Name>`remember_token`</a:Name>
+<a:Code>`remember_token`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DefaultValue>NULL</a:DefaultValue>
+<a:DataType>varchar(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o244">
+<a:ObjectID>EFA429A2-49E7-4127-B588-517D2AF35E71</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o245">
+<a:ObjectID>AC9B2DEF-AC5D-4BCB-AD5B-FD8059CEA12A</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o246">
+<a:ObjectID>73759C4E-3AB5-4039-97D6-B237E433202B</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`id`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+</c:Tables>
+<c:DefaultGroups>
+<o:Group Id="o247">
+<a:ObjectID>D5D3848C-ACC5-4D92-87AC-5505F08AC716</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1707048932</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048932</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o248">
+<a:ObjectID>513D3BA4-9E10-4041-B298-370629D7DFFE</a:ObjectID>
+<a:Name>INFORMIX SQL 9.x</a:Name>
+<a:Code>INFORMIX9</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048986</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:TargetModelURL>file:///%_DBMS%/infmx9.xdb</a:TargetModelURL>
+<a:TargetModelID>6EE87B23-1381-4E35-B5E5-271248D82ACC</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>

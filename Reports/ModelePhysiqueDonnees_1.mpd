@@ -1,0 +1,1844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{56AD9F69-7733-4F13-A718-E46A5FBE0891}" Label="" Name="ModelePhysiqueDonnees_1" Objects="223" Symbols="24" Target="INFORMIX SQL 9.x" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="11.1.0.1547 Evaluation"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>56AD9F69-7733-4F13-A718-E46A5FBE0891</a:ObjectID>
+<a:Name>ModelePhysiqueDonnees_1</a:Name>
+<a:Code>MODELEPHYSIQUEDONNEES_1</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1709246546</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Physical Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+RevPkey=Yes
+RevFkey=Yes
+RevAkey=Yes
+RevCheck=Yes
+RevIndx=Yes
+RevOpts=Yes
+RevViewAsTabl=No
+RevViewOpts=Yes
+RevSystAsTabl=Yes
+RevTablPerm=No
+RevViewPerm=No
+RevProcPerm=No
+RevDbpkPerm=No
+RevSqncPerm=No
+RevAdtPerm=No
+RevUserPriv=No
+RevUserOpts=No
+RevGrpePriv=No
+RevRolePriv=No
+RevDtbsOpts=Yes
+RevDtbsPerm=No
+RevViewIndx=Yes
+RevJidxOpts=Yes
+RevCaseSensitive=No
+GenScriptName=crebas
+GenScriptName0=
+GenScriptName1=
+GenScriptName2=
+GenScriptName3=
+GenScriptName4=
+GenScriptName5=
+GenScriptName6=
+GenScriptName7=
+GenScriptName8=
+GenScriptName9=
+GenPathName=
+GenSingleFile=Yes
+GenTrgScriptName=cretrg
+GenTrgScriptName0=
+GenTrgScriptName1=
+GenTrgScriptName2=
+GenTrgScriptName3=
+GenTrgScriptName4=
+GenTrgScriptName5=
+GenTrgScriptName6=
+GenTrgScriptName7=
+GenTrgScriptName8=
+GenTrgScriptName9=
+GenTrgPathName=
+GenTrgSingleFile=Yes
+GenODBC=No
+GenCheckModel=Yes
+GenScriptPrev=Yes
+GenArchiveModel=No
+GenDataPathName=
+GenDataSinglefile=Yes
+GenDataScriptName=testdata
+GenDataScriptName0=
+GenDataScriptName1=
+GenDataScriptName2=
+GenDataScriptName3=
+GenDataScriptName4=
+GenDataScriptName5=
+GenDataScriptName6=
+GenDataScriptName7=
+GenDataScriptName8=
+GenDataScriptName9=
+GenDataOdbc=No
+GenDataDelOld=No
+GenDataTitle=No
+GenDataDefNumRows=20
+GenDataCommit=0
+GenDataPacket=0
+GenDataCSV=No
+GenDataOwner=No
+GenDataProfNumb=
+GenDataProfChar=
+GenDataProfDate=
+GenTspcCrea=Yes
+GenTspcDrop=Yes
+GenTspcHead=Yes
+GenTspcFoot=Yes
+GenTspcCmmt=Yes
+GenStorCrea=Yes
+GenStorDrop=Yes
+GenStorCmmt=Yes
+GenUddtCrea=Yes
+GenUddtDval=Yes
+GenUddtChck=Yes
+GenUddtCmmt=Yes
+GenUddtDrop=Yes
+GenDeftCrea=Yes
+GenDeftCmmt=Yes
+GenDeftDrop=Yes
+GenClssCrea=Yes
+GenClssHead=Yes
+GenClssFoot=Yes
+GenClssCmmt=Yes
+GenClssDrop=Yes
+GenClssInst=Yes
+GenClssSupp=Yes
+GenClssPerm=No
+GenDtbsCrea=Yes
+GenDtbsOpts=Yes
+GenDtbsHead=Yes
+GenDtbsFoot=Yes
+GenDtbsOpen=Yes
+GenDtbsClose=Yes
+GenDtbsDrop=Yes
+GenDtbsPerm=No
+GenUserCrea=Yes
+GenUserGrant=Yes
+GenUserDrop=Yes
+GenUserPriv=No
+GenUserOpts=No
+GenGrpeCrea=Yes
+GenGrpeDrop=Yes
+GenGrpePriv=No
+GenRoleCrea=Yes
+GenRoleDrop=Yes
+GenRolePriv=No
+GenSynmCrea=Yes
+GenSynmDrop=Yes
+GenSynmTabl=Yes
+GenSynmView=Yes
+GenSynmProc=Yes
+GenSynmSynm=Yes
+GenSynmDbpk=Yes
+GenSynmSqnc=Yes
+GenTablCrea=Yes
+GenTablChck=Yes
+GenTablCntr=No
+GenTablOpts=Yes
+GenTablHead=Yes
+GenTablFoot=Yes
+GenTablCmmt=Yes
+GenTablDrop=Yes
+GenTablPerm=No
+GenColnUddt=Yes
+GenColnDval=Yes
+GenColnChck=Yes
+GenColnCntr=No
+GenColnOpts=Yes
+GenColnCmmt=Yes
+GenPkeyCrea=Yes
+GenPkeyCntr=No
+GenPkeyOpts=Yes
+GenPkeyDrop=Yes
+GenPkeyCmmt=Yes
+GenAkeyCrea=Yes
+GenAkeyCntr=No
+GenAkeyOpts=Yes
+GenAkeyDrop=Yes
+GenAkeyCmmt=Yes
+GenRefrCrea=Yes
+GenRefrCntr=Yes
+GenRefrIdcl=Yes
+GenRefrIDUR=Yes
+GenRefrIDUC=Yes
+GenRefrIDUN=Yes
+GenRefrIDUD=Yes
+GenRefrIDDR=Yes
+GenRefrIDDC=Yes
+GenRefrIDDN=Yes
+GenRefrIDDD=Yes
+GenRefrDrop=Yes
+GenRefrCmmt=Yes
+GenIndxCrea=Yes
+GenIndxOut=Yes
+GenIndxPkey=Yes
+GenIndxFkey=Yes
+GenIndxAkey=Yes
+GenIndxClus=Yes
+GenIndxOthr=Yes
+GenIndxOpts=Yes
+GenIndxCmmt=Yes
+GenIndxDrop=Yes
+GenViewCrea=Yes
+GenViewHead=Yes
+GenViewFoot=Yes
+GenViewCmmt=Yes
+GenViewDrop=Yes
+GenViewPerm=No
+GenViewOpts=Yes
+GenViewColn=No
+GenJidxCrea=Yes
+GenJidxOpts=Yes
+GenJidxHead=Yes
+GenJidxFoot=Yes
+GenJidxDrop=Yes
+GenJidxCmmt=Yes
+GenSqncCrea=Yes
+GenSqncDrop=Yes
+GenSqncCmmt=Yes
+GenSqncPerm=No
+GenTrgrCrea=Yes
+GenTrgrDrop=Yes
+GenTrgrCmmt=Yes
+GenTrgrFIns=Yes
+GenTrgrFUpd=Yes
+GenTrgrFDel=Yes
+GenTrgrFOth=Yes
+GenProcCrea=Yes
+GenProcDrop=Yes
+GenProcHead=Yes
+GenProcFoot=Yes
+GenProcCmmt=Yes
+GenProcPerm=No
+GenScriptTitle=Yes
+GenScriptNamLabl=No
+GenScriptQDtbs=Yes
+GenScriptQOwnr=Yes
+GenScriptCase=0
+GenScriptEncoding=ANSI
+GenScriptNAcct=No
+GenScriptODBC=No
+GenUseSync=No
+GenSyncChoice=0
+GenSyncArch=
+GenBackupTabl=1
+GenKeepBackTabl=1
+GenTmpTablDrop=No
+GenKeepTablOpts=No
+GenSyncRmg=0
+GenTrgrStdMsg=Yes
+GenTrgrMsgTab=
+GenTrgrMsgNo=
+GenTrgrMsgTxt=
+GenRuleCrea=Yes
+GenRuleDrop=Yes
+GenRuleCmmt=Yes
+GenSynmPathName=
+GenSynmSinglefile=Yes
+GenSynmScriptName=synonym
+GenSynmScriptName0=
+GenSynmScriptName1=
+GenSynmScriptName2=
+GenSynmScriptName3=
+GenSynmScriptName4=
+GenSynmScriptName5=
+GenSynmScriptName6=
+GenSynmScriptName7=
+GenSynmScriptName8=
+GenSynmScriptName9=
+GenSynmOdbc=No
+GenSynmTitle=No
+GenSynmOwner=No
+GenPrivPathName=
+GenPrivSinglefile=Yes
+GenPrivScriptName=privilege
+GenPrivScriptName0=
+GenPrivScriptName1=
+GenPrivScriptName2=
+GenPrivScriptName3=
+GenPrivScriptName4=
+GenPrivScriptName5=
+GenPrivScriptName6=
+GenPrivScriptName7=
+GenPrivScriptName8=
+GenPrivScriptName9=
+GenPrivOdbc=No
+GenPrivTitle=No
+GenPrivOwner=No
+GenDbpkCrea=Yes
+GenDbpkDrop=Yes
+GenDbpkPerm=No
+GenWebsCrea=Yes
+GenWebsDrop=Yes
+GenWebsCmmt=Yes
+GenMultPathName=
+GenMultSinglefile=Yes
+GenMultScriptName=synonym
+GenMultScriptName0=
+GenMultScriptName1=
+GenMultScriptName2=
+GenMultScriptName3=
+GenMultScriptName4=
+GenMultScriptName5=
+GenMultScriptName6=
+GenMultScriptName7=
+GenMultScriptName8=
+GenMultScriptName9=
+GenMultOdbc=No
+GenMultTitle=No
+GenMultOwner=No
+GenDimnCrea=Yes
+GenDimnDrop=Yes
+TrgrPreserve=No
+TrgrIns=Yes
+TrgrUpd=Yes
+TrgrDel=Yes
+TrgrC2Ins=Yes
+TrgrC2Upd=Yes
+TrgrC3=Yes
+TrgrC4=Yes
+TrgrC5=Yes
+TrgrC6=Yes
+TrgrC7=Yes
+TrgrC8=Yes
+TrgrC9=Yes
+TrgrC10=Yes
+TrgrC11=Yes
+TrgrC1=Yes
+TrgrC12Ins=Yes
+TrgrC12Upd=Yes
+TrgrC13=Yes
+
+[FolderOptions\Pdm]
+IndxIQName=%COLUMN%_%INDEXTYPE%
+IndxPK=Yes
+IndxFK=Yes
+IndxAK=Yes
+IndxPKName=%TABLE%_PK
+IndxFKName=%REFR%_FK
+IndxAKName=%AKEY%_AK
+IndxPreserve=No
+IndxThreshold=0
+RefrPreserve=No
+JidxPreserve=No
+RbldMultiFact=Yes
+RbldMultiDim=Yes
+RbldMultiJidx=Yes
+CubePreserve=No
+CubeScriptPath=
+CubeScriptCase=0
+CubeScriptEncoding=ANSI
+CubeScriptNacct=No
+CubeScriptHeader=No
+CubeScriptExt=csv
+CubeScriptExt0=txt
+CubeScriptExt1=
+CubeScriptExt2=
+CubeScriptSep=,
+CubeScriptDeli=&quot;
+DfltDomnName=D_%.U:VALUE%
+DfltColnName=D_%.U:VALUE%
+DfltReuse=Yes
+DfltDrop=Yes</a:PackageOptionsText>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Physical Objects]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+DefaultDttp=
+IgnoreOwner=No
+RebuildTrigger=Yes
+RefrUnique=No
+RefrAutoMigrate=Yes
+RefrMigrateReuse=Yes
+RefrMigrateDomain=Yes
+RefrMigrateCheck=Yes
+RefrMigrateRule=Yes
+RefrMigrateExtd=No
+RefrMigrDefaultLink=No
+RefrDfltImpl=D
+RefrPrgtColn=No
+RefrMigrateToEnd=No
+ColnFKName=%.3:PARENT%_%COLUMN%
+ColnFKNameUse=No
+DomnForbDivg=No
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyMand=No
+DomnCopyExtd=No
+DomnCopyProf=No
+Notation=0
+
+[ModelOptions\Physical Objects\NamingOptionsTemplates]
+
+[ModelOptions\Physical Objects\ClssNamingOptions]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Code]
+Template=
+MaxLen=30
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Code]
+Template=
+MaxLen=31
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Code]
+Template=
+MaxLen=24
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Code]
+Template=
+MaxLen=18
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=&quot;\/:*?&lt;&gt;|&quot;
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+
+[ModelOptions\Connection]
+
+[ModelOptions\Pdm]
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+Notation=2
+
+[ModelOptions\Generate\Oom]
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=Yes
+ClassPrefix=
+
+[ModelOptions\Generate\Xsm]
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=No
+
+[ModelOptions\Default Opts]
+
+[ModelOptions\Default Opts\TABL]
+PhysOpts=
+
+[ModelOptions\Default Opts\COLN]
+PhysOpts=
+
+[ModelOptions\Default Opts\INDX]
+PhysOpts=
+
+[ModelOptions\Default Opts\AKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\PKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\STOR]
+PhysOpts=
+
+[ModelOptions\Default Opts\TSPC]
+PhysOpts=
+
+[ModelOptions\Default Opts\SQNC]
+PhysOpts=
+
+[ModelOptions\Default Opts\DTBS]
+PhysOpts=
+
+[ModelOptions\Default Opts\USER]
+PhysOpts=
+
+[ModelOptions\Default Opts\JIDX]
+PhysOpts=</a:ModelOptionsText>
+<c:DBMS>
+<o:Shortcut Id="o3">
+<a:ObjectID>C6D55CEA-5AAA-446A-9B08-1E1586BA837C</a:ObjectID>
+<a:Name>INFORMIX SQL 9.x</a:Name>
+<a:Code>INFORMIX9</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048986</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:TargetStereotype/>
+<a:TargetID>6EE87B23-1381-4E35-B5E5-271248D82ACC</a:TargetID>
+<a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
+</o:Shortcut>
+</c:DBMS>
+<c:PhysicalDiagrams>
+<o:PhysicalDiagram Id="o4">
+<a:ObjectID>9B7E0028-AAE2-4A9B-BA59-A9D471F7B1BB</a:ObjectID>
+<a:Name>DiagrammePhysique_1</a:Name>
+<a:Code>DIAGRAMMEPHYSIQUE_1</a:Code>
+<a:CreationDate>1707048933</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1709246546</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\PDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+
+[DisplayPreferences\Object]
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+File Location=No
+Display Model Version=Yes
+PckgStrn=Yes
+TablColn=Yes
+ColnMode=0
+ColnMax=5
+TablIndx=No
+TablKey=No
+TablTrgr=No
+TablOwnr=No
+TablStrn=Yes
+ColnDttp=Yes
+ColnDomn=No
+ColnShowDomn=No
+ColnKey=Yes
+ColnIndx=No
+ColnMand=No
+ColnStrn=Yes
+ViewTabl=Yes
+ViewIndx=No
+ViewColn=Yes
+ViewOwnr=No
+ViewStrn=Yes
+VColName=Yes
+VColExpr=No
+VColDttp=No
+VColIndx=No
+VColCMod=1
+VColCMax=5
+RefrName=No
+RefrJoin=No
+RefrCnam=Yes
+RefrIntg=No
+RefrImpl=No
+RefrCard=No
+RefrStrn=Yes
+RefrRole=Yes
+VRefName=No
+VRefJoin=No
+VRefStrn=Yes
+VRefRole=Yes
+ProcOwnr=No
+ProcStrn=No
+KeyStrn=Yes
+IndxStrn=Yes
+TrgrStrn=Yes
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=224 224 224
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+Line style=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PDMPCKG]
+PckgStereotypeFont=Arial,8,N
+PckgStereotypeFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\TABL]
+TablStrnFont=Arial,8,N
+TablStrnFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+TableColumnsFont=Arial,8,N
+TableColumnsFont color=0, 0, 0
+TablePkColumnsFont=Arial,8,U
+TablePkColumnsFont color=0, 0, 0
+TableFkColumnsFont=Arial,8,N
+TableFkColumnsFont color=0, 0, 0
+TableKeysFont=Arial,8,N
+TableKeysFont color=0, 0, 0
+TableIndexsFont=Arial,8,N
+TableIndexsFont color=0, 0, 0
+TableTriggersFont=Arial,8,N
+TableTriggersFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=192 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\REFR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+CARDFont=Arial,8,N
+CARDFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VREF]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VIEW]
+ViewStrnFont=Arial,8,N
+ViewStrnFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+ViewColumnnFont=Arial,8,N
+ViewColumnnFont color=0, 0, 0
+ViewIndexesFont=Arial,8,N
+ViewIndexesFont color=0, 0, 0
+ViewTablesFont=Arial,8,N
+ViewTablesFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PROC]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4000
+Height=1000
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+NAMEFont=Arial,8,N
+NAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+OBJXSTRFont=Arial,8,N
+OBJXSTRFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8500, 11000)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<c:Symbols>
+<o:TableSymbol Id="o5">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((11948,-15134), (41580,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o6"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o7">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1709246547</a:ModificationDate>
+<a:Rect>((9834,5116), (36222,14829))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o8"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o9">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((44081,-14160), (66840,-5421))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o10"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o11">
+<a:CreationDate>1707049013</a:CreationDate>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Rect>((42311,6397), (66227,15136))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>TablStrn 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o12"/>
+</c:Object>
+</o:TableSymbol>
+</c:Symbols>
+</o:PhysicalDiagram>
+</c:PhysicalDiagrams>
+<c:DefaultDiagram>
+<o:PhysicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Tables>
+<o:Table Id="o6">
+<a:ObjectID>AF2AF996-79CE-41D4-9CC3-E786153C62D9</a:ObjectID>
+<a:Name>`campaign_businessactivities`</a:Name>
+<a:Code>`campaign_businessactivities`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o13">
+<a:ObjectID>587D63A3-7B4A-4876-B5BC-3989243FBC5A</a:ObjectID>
+<a:Name>`businessActivity_id`</a:Name>
+<a:Code>`businessActivity_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o14">
+<a:ObjectID>BC8C9095-1D44-474C-A2CC-C796EAAACA5B</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o15">
+<a:ObjectID>1B933245-EB1D-44EF-B02B-34A82171F03F</a:ObjectID>
+<a:Name>`campaign_name`</a:Name>
+<a:Code>`campaign_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o16">
+<a:ObjectID>25AC089F-8576-42C6-BF18-3EEDE7483602</a:ObjectID>
+<a:Name>`activity_name`</a:Name>
+<a:Code>`activity_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o17">
+<a:ObjectID>CD00D371-693F-45BE-A60E-B4B2F928AB63</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o18">
+<a:ObjectID>18FE8576-9A87-4E1B-8377-324DB89476CC</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o19">
+<a:ObjectID>94F5C454-CA42-4794-ABC2-F2390AF6A9C7</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`businessActivity_id`,`campaign_id`</a:DataType>
+</o:Column>
+<o:Column Id="o20">
+<a:ObjectID>B8309F58-4938-4F77-BC22-67C127501026</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_businessactivities_businessactivity_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o8">
+<a:ObjectID>27316F02-86BF-462E-AACD-52C3734ACD42</a:ObjectID>
+<a:Name>`campaign_businesstype`</a:Name>
+<a:Code>`campaign_businesstype`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o21">
+<a:ObjectID>8B91FBFC-755A-4B1E-8926-A565C2689CAC</a:ObjectID>
+<a:Name>`businesstype_id`</a:Name>
+<a:Code>`businesstype_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o22">
+<a:ObjectID>2B21CAF4-E6F4-4325-A9D0-78127A776EDC</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o23">
+<a:ObjectID>1271AECA-B575-47FB-8AAA-7757B2DF2B21</a:ObjectID>
+<a:Name>`campaign_name`</a:Name>
+<a:Code>`campaign_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o24">
+<a:ObjectID>0F632550-4D18-45A9-A324-61F13234DAF1</a:ObjectID>
+<a:Name>`type_name`</a:Name>
+<a:Code>`type_name`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o25">
+<a:ObjectID>8218F82B-554C-4AB0-82B4-2F6893C96B0F</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o26">
+<a:ObjectID>4A560137-B96F-4AAE-A0E6-F09AB14B2FB3</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o27">
+<a:ObjectID>9DD3A1A2-27CE-4EDE-A776-5DA3F6D31C01</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`businesstype_id`,`campaign_id`</a:DataType>
+</o:Column>
+<o:Column Id="o28">
+<a:ObjectID>FCBC9417-5CA2-48B0-A3D5-B6FCEF1B6F7F</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_businesstype_businesstype_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o10">
+<a:ObjectID>42C7D1E4-C904-4227-9B0B-D0D8F871A35C</a:ObjectID>
+<a:Name>`campaign_locations`</a:Name>
+<a:Code>`campaign_locations`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o29">
+<a:ObjectID>95637F00-6D24-48BB-BFA4-8948F572C411</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o30">
+<a:ObjectID>031F0C10-2DE8-4AF0-AB15-A83FD9782345</a:ObjectID>
+<a:Name>`location_id`</a:Name>
+<a:Code>`location_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o31">
+<a:ObjectID>89BF144A-3788-4A85-9B8E-2D6E05CAA78B</a:ObjectID>
+<a:Name>`radius`</a:Name>
+<a:Code>`radius`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o32">
+<a:ObjectID>729CEFC5-1511-448B-B80B-F9DED0BC736B</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o33">
+<a:ObjectID>3BFA2E99-E4FE-4D0B-9585-43CE3451671C</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o34">
+<a:ObjectID>8A4BB573-0FA8-41EA-A4D2-F042F5070CB5</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`campaign_id`,`location_id`</a:DataType>
+</o:Column>
+<o:Column Id="o35">
+<a:ObjectID>D8DA7FB8-134F-4AB5-B944-08410B4C02A3</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_locations_campaign_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o12">
+<a:ObjectID>0A0C14A6-3331-4366-9E90-B78D9B1A59FD</a:ObjectID>
+<a:Name>`campaign_placements`</a:Name>
+<a:Code>`campaign_placements`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci</a:PhysicalOptions>
+<c:Columns>
+<o:Column Id="o36">
+<a:ObjectID>FB33DEC4-4E7F-4396-9245-A253715BF479</a:ObjectID>
+<a:Name>`campaign_id`</a:Name>
+<a:Code>`campaign_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o37">
+<a:ObjectID>A8F7B5FB-0895-4567-8285-5E491DDB738A</a:ObjectID>
+<a:Name>`placement_id`</a:Name>
+<a:Code>`placement_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o38">
+<a:ObjectID>A16CDFA8-BF72-4945-A8FB-B864A2D4ED21</a:ObjectID>
+<a:Name>`tracking_id`</a:Name>
+<a:Code>`tracking_id`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o39">
+<a:ObjectID>81760043-06C2-4F5C-AACC-38E1CEA8ECBA</a:ObjectID>
+<a:Name>`created_at`</a:Name>
+<a:Code>`created_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o40">
+<a:ObjectID>28070A2D-E905-4F4D-B801-88A9E1FE5290</a:ObjectID>
+<a:Name>`updated_at`</a:Name>
+<a:Code>`updated_at`</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>timestamp</a:DataType>
+</o:Column>
+<o:Column Id="o41">
+<a:ObjectID>2A24DDFE-504F-4943-805A-BDFBE6F89B38</a:ObjectID>
+<a:Name>PRIMARY</a:Name>
+<a:Code>PRIMARY</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>KEY (`campaign_id`,`placement_id`</a:DataType>
+</o:Column>
+<o:Column Id="o42">
+<a:ObjectID>204AA157-C887-48BF-944A-DA705D040D88</a:ObjectID>
+<a:Name>CONSTRAINT</a:Name>
+<a:Code>CONSTRAINT</a:Code>
+<a:CreationDate>1707049013</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707049013</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:DataType>`campaign_placements_campaign_id_foreign`</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+</c:Tables>
+<c:DefaultGroups>
+<o:Group Id="o43">
+<a:ObjectID>D5D3848C-ACC5-4D92-87AC-5505F08AC716</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1707048932</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048932</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o44">
+<a:ObjectID>513D3BA4-9E10-4041-B298-370629D7DFFE</a:ObjectID>
+<a:Name>INFORMIX SQL 9.x</a:Name>
+<a:Code>INFORMIX9</a:Code>
+<a:CreationDate>1707048986</a:CreationDate>
+<a:Creator>Ibrahim</a:Creator>
+<a:ModificationDate>1707048986</a:ModificationDate>
+<a:Modifier>Ibrahim</a:Modifier>
+<a:TargetModelURL>file:///%_DBMS%/infmx9.xdb</a:TargetModelURL>
+<a:TargetModelID>6EE87B23-1381-4E35-B5E5-271248D82ACC</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
