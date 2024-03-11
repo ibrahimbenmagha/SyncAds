@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
+            $table->string('perfecture', 45);
+
             // $table->string('user_id');
             // $table->string('business_type_id');
             // $table->string('business_activity_id');
