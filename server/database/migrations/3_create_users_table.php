@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name', 45);
             $table->string('phone', 45);
             $table->string('address', 255);
-            $table->boolean("status", false);
+            $table->enum('status', ['activated', 'suspended', 'desactivated'])->default('desactivated');
             $table->enum('role', ['advertiser', 'business', 'admin']);
             $table->rememberToken();
             $table->timestamps();

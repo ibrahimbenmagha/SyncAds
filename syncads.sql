@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2024 at 01:38 PM
+-- Generation Time: Mar 11, 2024 at 04:52 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -45,6 +45,7 @@ CREATE TABLE `advertiser` (
 CREATE TABLE `businesses` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(45) NOT NULL,
+  `perfecture` varchar(45) NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
   `business_type_id` bigint(20) UNSIGNED NOT NULL,
   `business_activity_id` bigint(20) UNSIGNED NOT NULL,
@@ -65,6 +66,17 @@ CREATE TABLE `business_activities` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `business_activities`
+--
+
+INSERT INTO `business_activities` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Beaty', NULL, NULL),
+(2, 'Health', NULL, NULL),
+(3, 'Entertainment', NULL, NULL),
+(4, 'Sports', NULL, NULL),
+(5, 'Food', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +89,20 @@ CREATE TABLE `business_types` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `business_types`
+--
+
+INSERT INTO `business_types` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Parapharmacy', NULL, NULL),
+(2, 'Pharmacy', NULL, NULL),
+(3, 'Cinema', NULL, NULL),
+(4, 'Gaming center', NULL, NULL),
+(5, 'Gaming shop', NULL, NULL),
+(6, 'Gym', NULL, NULL),
+(7, 'Bodybulding product shop', NULL, NULL),
+(8, 'Supermarcket', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -270,13 +296,15 @@ ALTER TABLE `businesses`
 -- Indexes for table `business_activities`
 --
 ALTER TABLE `business_activities`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `business_activities_name_unique` (`name`);
 
 --
 -- Indexes for table `business_types`
 --
 ALTER TABLE `business_types`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `business_types_name_unique` (`name`);
 
 --
 -- Indexes for table `campaigns`
@@ -359,13 +387,13 @@ ALTER TABLE `businesses`
 -- AUTO_INCREMENT for table `business_activities`
 --
 ALTER TABLE `business_activities`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `business_types`
 --
 ALTER TABLE `business_types`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `campaigns`

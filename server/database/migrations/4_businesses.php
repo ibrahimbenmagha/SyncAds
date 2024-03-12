@@ -16,16 +16,12 @@ return new class extends Migration
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
-            $table->string('perfecture', 45);
-
-            // $table->string('user_id');
-            // $table->string('business_type_id');
-            // $table->string('business_activity_id');
+            $table->string('businessType')->references('name')->on('business_types');
+            $table->string('businessActivity')->references('name')->on('business_activity');
 
             // Clés étrangères
                 $table->foreignId('user_id')->references('id')->on('users');
-                $table->foreignId('business_type_id')->references('id')->on('business_types');
-                $table->foreignId('business_activity_id')->references('id')->on('business_activities');
+               
 
             $table->timestamps();
         });
