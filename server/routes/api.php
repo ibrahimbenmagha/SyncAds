@@ -23,5 +23,5 @@ use App\Http\Controllers\Usercontroller;
 // });
 
 Route::post('/createBusiness', [BusinessController::class, 'create_business']);
-Route::post('/createadmin', [Usercontroller::class, 'create_admin']);
+Route::post('/createAdmin', [Usercontroller::class, 'create_admin']);
 

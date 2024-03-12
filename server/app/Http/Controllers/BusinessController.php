@@ -41,7 +41,7 @@ class BusinessController extends Controller
 
     public function get_business(Request $request)
     {
-        // Your logic for getting businesses goes here
+        
     }
 
 }

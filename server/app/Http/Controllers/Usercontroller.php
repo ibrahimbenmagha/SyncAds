@@ -10,16 +10,19 @@ use App\Models\User;
 class Usercontroller extends Controller
 {
 
-    // public function create_admin(Request $request){
+    public function create_admin(Request $request)
+    {
+        $user = User::create([
+            'name' => $request->input('name'),
+            'phone' => $request->input('phone'),
+            'email' => $request->input('email'),
+            'address' => $request->input('address'),
+            'password' => bcrypt($request->input('password')),
+            'role' => 'admin',
+            'status' => 'activated', 
+        ]);
+        return response()->json(['message' => 'Business created successfully', 'business' => $user], 201);
 
-    //     $validateuser = Validator::make($request->all(),[
-    //         'name' =>'required |string',
-    //         'phone' => 'required|string',
-    //         'email' => 'required|email|unique:users',
-    //         'password' => 'required|min:8|confirmed',
-    //         'adrress' => 'required|',   
-    //     ]);
-
-    // }
+    }
 
 }
