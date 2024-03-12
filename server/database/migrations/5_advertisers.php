@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up():void
     {
-        Schema::create('advertiser', function (Blueprint $table) {
+        Schema::create('advertisers', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
-            // $table->unsignedBigInteger('user_id');
-            // $table->unsignedBigInteger('advertiser_activity')->nullable();
-
+            $table->string('advertiser_activity')->references('name')->on('business_activities');
             $table->foreignId('user_id')->references('id')->on('users');
-            $table->foreignId('advertiser_activity')->references('id')->on('business_activities');
-
             $table->timestamps();
         });
     }

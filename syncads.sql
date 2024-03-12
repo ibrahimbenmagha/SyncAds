@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2024 at 04:52 PM
+-- Generation Time: Mar 12, 2024 at 11:15 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `advertiser` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(45) NOT NULL,
+  `advertiser_activity` varchar(255) NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `advertiser_activity` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -45,10 +45,9 @@ CREATE TABLE `advertiser` (
 CREATE TABLE `businesses` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(45) NOT NULL,
-  `perfecture` varchar(45) NOT NULL,
+  `businessType` varchar(255) NOT NULL,
+  `businessActivity` varchar(255) NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `business_type_id` bigint(20) UNSIGNED NOT NULL,
-  `business_activity_id` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -264,7 +263,7 @@ CREATE TABLE `users` (
   `name` varchar(45) NOT NULL,
   `phone` varchar(45) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `status` tinyint(1) NOT NULL,
+  `status` enum('activated','suspended','desactivated') NOT NULL DEFAULT 'desactivated',
   `role` enum('advertiser','business','admin') NOT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -280,17 +279,14 @@ CREATE TABLE `users` (
 --
 ALTER TABLE `advertiser`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `advertiser_user_id_foreign` (`user_id`),
-  ADD KEY `advertiser_advertiser_activity_foreign` (`advertiser_activity`);
+  ADD KEY `advertiser_user_id_foreign` (`user_id`);
 
 --
 -- Indexes for table `businesses`
 --
 ALTER TABLE `businesses`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `businesses_user_id_foreign` (`user_id`),
-  ADD KEY `businesses_business_type_id_foreign` (`business_type_id`),
-  ADD KEY `businesses_business_activity_id_foreign` (`business_activity_id`);
+  ADD KEY `businesses_user_id_foreign` (`user_id`);
 
 --
 -- Indexes for table `business_activities`
@@ -393,7 +389,7 @@ ALTER TABLE `business_activities`
 -- AUTO_INCREMENT for table `business_types`
 --
 ALTER TABLE `business_types`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `campaigns`
@@ -451,22 +447,19 @@ ALTER TABLE `users`
 -- Constraints for table `advertiser`
 --
 ALTER TABLE `advertiser`
-  ADD CONSTRAINT `advertiser_advertiser_activity_foreign` FOREIGN KEY (`advertiser_activity`) REFERENCES `business_activities` (`id`),
   ADD CONSTRAINT `advertiser_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
 -- Constraints for table `businesses`
 --
 ALTER TABLE `businesses`
-  ADD CONSTRAINT `businesses_business_activity_id_foreign` FOREIGN KEY (`business_activity_id`) REFERENCES `business_activities` (`id`),
-  ADD CONSTRAINT `businesses_business_type_id_foreign` FOREIGN KEY (`business_type_id`) REFERENCES `business_types` (`id`),
   ADD CONSTRAINT `businesses_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
 -- Constraints for table `campaigns`
 --
 ALTER TABLE `campaigns`
-  ADD CONSTRAINT `campaigns_advertiser_id_foreign` FOREIGN KEY (`advertiser_id`) REFERENCES `advertiser` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `campaigns_advertiser_id_foreign` FOREIGN KEY (`advertiser_id`) REFERENCES `advertiser` (`id`);
 
 --
 -- Constraints for table `locations`

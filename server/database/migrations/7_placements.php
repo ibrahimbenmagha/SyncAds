@@ -16,8 +16,6 @@ return new class extends Migration
         Schema::create('placements', function (Blueprint $table) {
             $table->string('id')->primary;
             $table->string('name');
-            // $table->unsignedBigInteger('location_id');
-
             $table->foreignId('location_id')->references('id')->on('locations');
 
             $table->timestamps();

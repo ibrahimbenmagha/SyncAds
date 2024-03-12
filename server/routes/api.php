@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\Usercontroller;
+
 
 
 /*
@@ -21,3 +23,5 @@ use App\Http\Controllers\BusinessController;
 // });
 
 Route::post('/createBusiness', [BusinessController::class, 'create_business']);
+Route::post('/createadmin', [Usercontroller::class, 'create_admin']);
+

@@ -17,24 +17,18 @@ return new class extends Migration
             $table->date('begin_date');
             $table->date('end_date');
             $table->string('file', 255);
-            $table->time('display_hours');
+            $table->time('display_minutes');
             $table->enum('status', ['actif', 'pending', 'inactif', 'finished'])->default('pending');
             $table->string('url', 255);
-            $table->unsignedBigInteger('advertiser_id');
-
-            // Define foreign key constraint
-            $table->foreign('advertiser_id')->references('id')->on('advertiser')->onDelete('cascade');
+            $table->string('region')->references('region')->on('locations')->nullable(true);
+            $table->string('city')->references('city')->on('locations')->nullable(true);
+            $table->string('secteur')->references('secteur')->on('locations')->nullable(true);
+            $table->foreignId('advertiser_id')->references('id')->on('advertisers');
 
             $table->timestamps();
         }
     );
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('campaigns');

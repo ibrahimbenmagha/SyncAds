@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
-            $table->string('region');
-            $table->string('city');
-            $table->string('secteur');
-            // $table->unsignedBigInteger('business_id');
-
+            $table->boolean('available');
+            // $table->enum('status', ['actif', 'pending', 'inactif', 'finished'])->default('pending');
+            $table->enum('city', ["Casablanca"])->nullable(true);
+            $table->string('secteur')->nullable(true);
             $table->foreignId('business_id')->references('id')->on('businesses');
 
             $table->timestamps();

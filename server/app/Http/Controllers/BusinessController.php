@@ -13,25 +13,14 @@ class BusinessController extends Controller
 {
     public function create_business(Request $request)
     {
-        $request->validate([
-            'name' =>'required |string',
-            'phone' => 'required|string',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:8|confirmed',
-            'business_name' => 'required|string',
-            'business_activity' => 'required',
-            'business_type' => 'required',
-            'region' => 'required|string',
-            'city' => 'required|string',
-            'secteur' => 'required|string',
-        ]);
         $user = User::create([
             'name' => $request->input('name'),
             'phone' => $request->input('phone'),
             'email' => $request->input('email'),
+            'address' => $request->input('address'),
             'password' => bcrypt($request->input('password')),
             'role' => 'business', // Assuming the role for businesses is 'business'
-            'status' => 'deactivated', // Default status
+            'status' => 'desactivated', // Default status
         ]);
         $business = Business::create([
             'name' => $request->input('business_name'),
@@ -41,8 +30,8 @@ class BusinessController extends Controller
         ]);
 
         $location = Location::create([
-            'region' => $request->input('region'),
             'city' => $request->input('city'),
+            'Available' => True,
             'secteur' => $request->input('secteur'),
             'business_id' => $business->id,
         ]);
@@ -51,8 +40,8 @@ class BusinessController extends Controller
     }
 
     public function get_business(Request $request)
-{
-    
-}
+    {
+        // Your logic for getting businesses goes here
+    }
 
 }

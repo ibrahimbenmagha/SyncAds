@@ -74,11 +74,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+ 
 class Business extends Model
 {
     use HasFactory;
-
+    protected $table = 'businesses';
     protected $fillable = [
         'name',
         'businessType',
@@ -86,11 +86,14 @@ class Business extends Model
         'user_id',
     ];
 
-    /**
-     * Get the user that owns the business.
-     */
+  
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function shcedule()
+    {
+        return $this->hasMany(Schedule::class);
     }
 }
