@@ -5,31 +5,27 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
-
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
     public function up(): void
     {
-        Schema::create('business_types', function (Blueprint $table) {
-            // $table->string('id')->primary();
-            $table->id();   
-            $table->string('name')->unique();
+        Schema::create('availabilities', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId("ocationId")->references("id")->on("locations");
+            $table->time("Time_Start");
+            $table->time("Time_End");
+            $table->enum("isAvailable", [true, false]);
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('business_types');
+        //
     }
 };
-
