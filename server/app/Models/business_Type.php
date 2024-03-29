@@ -14,9 +14,9 @@ class BusinessType extends Model
         'business_activity_id'
     ];
 
-    public function business_activity()
+    public function business_type()
     {
-        return $this->belongsTo(BusinessActivity::class, "business_activity_id", "id" );
+        return $this->hasMany(BusinessType::class);
     }
  
 }

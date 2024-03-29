@@ -15,12 +15,11 @@ return new class extends Migration
     {
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
+            $table->string("CCI");
             $table->string('name', 45);
             $table->string('businessType')->references('name')->on('business_types');
             $table->string('businessActivity')->references('name')->on('business_activity');
-
-            // Clés étrangères
-                $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('user_id')->references('id')->on('users');
                
 
             $table->timestamps();

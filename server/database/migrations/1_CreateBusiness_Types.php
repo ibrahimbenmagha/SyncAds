@@ -18,7 +18,6 @@ return new class extends Migration
                 // $table->string('id')->primary();
                 $table->id();   
                 $table->string('name')->unique();
-                $table->foreignId("business_activity_id")->references("id")->on("business_activities");
                 $table->timestamps();
             });
     }
