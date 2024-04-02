@@ -11,7 +11,8 @@ use App\Models\Location;
 
 class BusinessController extends Controller
 {
-    public function create_business(Request $request)
+    
+    public function create_business(Request $request) //checked and it works
     {
         $user = User::create([
             'name' => $request->input('name'),
@@ -20,7 +21,7 @@ class BusinessController extends Controller
             'address' => $request->input('address'),
             'password' => bcrypt($request->input('password')),
             'role' => 'business', // Assuming the role for businesses is 'business'
-            'status' => 'desactivated', // Default status
+            'status' => 'activated', // Default status
         ]);
         $business = Business::create([
             'name' => $request->input('business_name'),
@@ -39,9 +40,18 @@ class BusinessController extends Controller
         return response()->json(['message' => 'Business created successfully', 'business' => $business], 201);
     }
 
-    public function get_business(Request $request)
+    public function GetAllBusinesses()
+    { //checked and it works
+        $AllBusin= Business::all();
+        return response()->Json($AllBusin);
+    }
+
+
+    public function GetBusinessById(Request $request) //checked and it works
     {
-        
+        $id = $request->input('id'); 
+        $BusinessById = Business::where('id', "$id")->get();
+        return response()->json(['BusinessById' => $BusinessById]);
     }
 
 }

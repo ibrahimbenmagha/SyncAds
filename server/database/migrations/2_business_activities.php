@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('business_activities', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
+            $table->foreignId("business_type_id")->references("id")->on("business_types");
             $table->timestamps();
         });
     }
